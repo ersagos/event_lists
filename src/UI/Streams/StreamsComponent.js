@@ -8,8 +8,6 @@ function DisplayStream(props) {
 
     if(props.stream.url) {
 
-        console.log(props.stream.url);
-
         video = <video controls class="streamPlayer" src={props.stream.url} type="video/mp4" />;
 
     }
@@ -44,8 +42,6 @@ function StreamsComponent(props) {
     props.streams.forEach(element => {
         videos.push(<DisplayStream stream={element}></DisplayStream>);
     });
-
-    console.log(videos);
 
     return <div class="componentBody">
         <div class="center">
