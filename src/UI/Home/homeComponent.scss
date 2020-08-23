@@ -1,0 +1,56 @@
+@import "../../index.scss";
+
+.event-list{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.event-element {
+  @include light-border;
+  margin : 10px;
+  padding : 10px;
+}
+
+.event-element:hover {
+  cursor: pointer;
+  background-color: $grey-background-color;
+}
+
+.displayEventList{
+    list-style-type: none;
+
+}
+
+.displayEventList,li {
+  list-style-position:inside;
+  margin:0;
+  padding:0; }
+
+  @media screen and (min-width: 640px) {
+
+    .event-element {
+        min-width: 320px;
+
+    }
+
+}
+
+@media screen and (min-width: 240px) and (max-width: 639px) {
+
+    .event-element {
+        min-width: 120px;
+
+    }
+
+}
+
+@media screen and (max-width: 239px) {
+
+    .event-element{
+        min-width: 25px;
+
+    }
+
+}

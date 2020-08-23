@@ -1,0 +1,73 @@
+$light-border-value : 1px solid #ebebeb;
+$grey-background-color: #f8f8f8;
+$h2-color : blue;
+
+@mixin light-border {
+  border : $light-border-value;
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+//LAYOUT STYLE
+
+.componentBody {
+  flex-wrap: wrap;
+ 
+
+}
+
+.center {
+
+  display:flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+//TABLE STYLE
+td {
+  border-bottom : $light-border-value;
+}
+
+tbody tr:hover {
+  background-color: $grey-background-color;
+}
+
+
+th {
+  border-bottom : $light-border-value;
+}
+
+table {
+  @include light-border;
+}
+
+.break-flex {
+  flex-basis: 100%;
+  height: 0;
+}
+
+
+//TITLES STYLES
+
+h2 {
+  color: $h2-color;
+}
+
+h3 {
+  text-decoration: underline;
+}

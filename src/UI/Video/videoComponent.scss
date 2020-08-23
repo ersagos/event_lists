@@ -1,0 +1,27 @@
+@media screen and (min-width: 640px) {
+
+    .placeHolderImg {
+        width: 500px;
+
+    }
+
+}
+
+@media screen and (min-width: 240px) and (max-width: 639px) {
+
+    .placeHolderImg {
+        
+        width: 120px;
+
+    }
+
+}
+
+@media screen and (max-width: 239px) {
+
+    .placeHolderImg {
+        width: 25px;
+
+    }
+
+}

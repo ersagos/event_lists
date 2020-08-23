@@ -1,0 +1,17 @@
+@import "../../index.scss";
+
+.tag {
+   @include light-border;
+   background-color : $grey-background-color;
+   text-align: center;
+   padding: 5px;
+}
+
+.tag + .tag {
+   margin-left: 10px;
+}
+
+.tagGrid {
+   justify-content: space-between;
+   display: flex;
+}
